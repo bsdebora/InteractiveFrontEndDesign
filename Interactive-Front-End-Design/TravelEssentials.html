@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel Essentials</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2a05f92155.js" crossorigin="anonymous"></script>
+ 
+<link rel="stylesheet" href="style.css">
+<style>
+.currencyrates{
+	margin:30px;
+}
+.data{
+	padding:30px;
+}
+</style>
+</head>
+<body>
+<header>
+        <nav class="navbar navbar-expand-md navbar-light" id="navlist">
+            <div class="container">
+            <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-toggle="tooltip" title="Home Page!" onmouseover="MouseOver(this);" onmouseout="MouseOut(this);"><i class="fas fa-house-user"></i></a></li>
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#" >Trending Tours<b class="caret"></b></a>
+                    <ul class="dropdown-menu">          
+                        <div class="honymoon_holiday_submenu">
+                        <div class="mega_menu_header_titles mega_menu_header_titles_no_top"></div>
+                                        <li><a href="ooty.html" title="Goa Tour Packages">Hill Station -Ooty </a></li> 
+                                        <li><a href="delhi.html" title="Gujarat Tour Packages">Historic - Delhi </a></li>
+                                        <li><a href="kanyakumari.html" title="Himachal Tour Packages">Beach - Kanyakumari </a></li> 
+                                
+                                        <li><a href="ladakh.html" title="Ladakh Tour Packages">Adventure -  Ladakh</a></li>
+                        </div>  </ul>
+                </li>
+                 <li class="nav-item"><a href="adventure.html" class="nav-link">Adventure tours</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link" data-toggle="tooltip" title="FAQs"><i class="fas fa-question-circle"></i></a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="sign.html" class="nav-link">Sign-In</a></li>
+                <li class="nav-item"><a href="weatherguide.html" class="nav-link">Wheather Guide</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+</header>
+<main>
+<div class="col-8 offset-2 currencyrates">
+	<h2>Handy Currency calulator for your travel planning</h2>
+    <button onclick="writeToDocument('CAD')">CAD</button>
+    <button onclick="writeToDocument('USD')">USD</button>
+    <button onclick="writeToDocument('EUR')">EUR</button>
+    <button onclick="writeToDocument('GBP')">GBP</button>
+    <button onclick="writeToDocument('AUD')">AUD</button>
+	  <button onclick="writeToDocument('INR')">INR</button>
+ 		<div id="data"></div>
+</div>
+</main>
+<script>
+		function writeToDocument(type){
+		const baseURL = "https://api.exchangeratesapi.io/latest?base=";
+		var xhr = new XMLHttpRequest();
+			xhr.open("GET", baseURL + type);
+					xhr.send();
+					xhr.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+									data = JSON.parse(this.responseText);
+							}; 
+						document.getElementById("data").innerHTML = `<h6><b>One ${type} to INR toaday is</b> ${data.rates.INR}</h6>` ; 
+					}
+				};
+</script>
+</body>
+</html>
+

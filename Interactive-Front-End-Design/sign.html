@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign-In/Sign-up</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2a05f92155.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+    background-image: url('https://cdn1.vectorstock.com/i/1000x1000/45/40/soft-abstract-background-in-light-colors-vector-21474540.jpg');
+    background-size:cover;
+}
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
+</style>
+
+</head>
+<body>
+<header>
+        <nav class="navbar navbar-expand-md navbar-light" id="navlist">
+            <div class="container">
+            <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-toggle="tooltip" title="Home Page!" onmouseover="MouseOver(this);" onmouseout="MouseOut(this);"><i class="fas fa-house-user"></i></a></li>
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#" >Trending Tours<b class="caret"></b></a>
+                    <ul class="dropdown-menu">          
+                        <div class="honymoon_holiday_submenu">
+                        <div class="mega_menu_header_titles mega_menu_header_titles_no_top"></div>
+                                        <li><a href="ooty.html" title="Goa Tour Packages">Hill Station -Ooty </a></li> 
+                                        <li><a href="delhi.html" title="Gujarat Tour Packages">Historic - Delhi </a></li>
+                                        <li><a href="kanyakumari.html" title="Himachal Tour Packages">Beach - Kanyakumari </a></li> 
+                                
+                                        <li><a href="ladakh.html" title="Ladakh Tour Packages">Adventure -  Ladakh</a></li>
+                        </div>  </ul>
+                </li>
+                 <li class="nav-item"><a href="adventure.html" class="nav-link">Adventure tours</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link" data-toggle="tooltip" title="FAQs"><i class="fas fa-question-circle"></i></a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="sign.html" class="nav-link">Sign-In</a></li>
+                <li class="nav-item"><a href="TravelEssentials.html" class="nav-link">Travel Essentials</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+</header>
+<div class="container">
+<br> 
+<div class="card bg-light">
+<article class="card-body mx-auto" style="max-width: 400px;">
+	<h4 class="card-title mt-3 text-center">Create Account</h4>
+	<p class="text-center">Get started with your free account</p>
+	<p>
+		<a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+		<a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+	</p>
+	<p class="divider-text">
+        <span class="bg-light">OR</span>
+    </p>
+	<form>
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Full name" type="text">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Email address" type="email">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+		</div>
+		<select class="custom-select" style="max-width: 120px;">
+		    <option selected="">+971</option>
+		    <option value="1">+972</option>
+		    <option value="2">+198</option>
+		    <option value="3">+701</option>
+		</select>
+    	<input name="" class="form-control" placeholder="Phone number" type="text">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+		</div>
+		<select class="form-control">
+			<option selected=""> Select job type</option>
+			<option>Designer</option>
+			<option>Manager</option>
+			<option>Accaunting</option>
+		</select>
+	</div> <!-- form-group end.// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Create password" type="password">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Repeat password" type="password">
+    </div> <!-- form-group// -->                                      
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+    </div> <!-- form-group// -->      
+    <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                 
+</form>
+</article>
+</div> <!-- card.// -->
+
+</div> 
+<!--container end.//-->
+  <footer class="container-fluid">
+      <div id="footer-details" class="row">
+        <div class="col-sm-4">
+          <h4 class="uppercase general-sub">About</h4>
+          <p class="inline-block footertext">Travel Agent since more than a decade, helped thousands of travellers cherish a safe and wonderful holiday.</p>
+        </div>
+        <div class="col-sm-4">
+            <h4 class="uppercase general-sub">Download</h4>
+              <p class="inline-block footertext"> Need our Travel brocher? Download here.<a href="#" target="_blank" class="cv-pdf"><i class="fa fa-download" aria-hidden="true"></i><span class="sr-only">Download link.</span></a></p>
+        </div>
+        <div class="col-sm-4">
+            <h4 class="uppercase general-sub">Social</h4>
+            <ul class="list-inline social-links">
+              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span class="sr-only">FaceBook</span>
+                </a>
+              </li>
+               <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                </li>
+                              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <span class="sr-only">Linkedin</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                  <a target="_blank" href="#">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">YouTube</span>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+ </footer>
+</body>
+</html>

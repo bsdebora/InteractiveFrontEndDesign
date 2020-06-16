@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explore Lei Ladahk</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2a05f92155.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+    html , body{
+    height:0;
+    background-color: #f7f3e1;
+    }
+
+    footer{
+    background-color: #8D8741;;
+	min-height: 75px;
+	margin: 0;
+}
+    .about-city.highlight{
+        background: #e0be92;
+    }
+    .content-boxplaces{
+        margin-left:20px;
+        width:100%;
+        height:100%;
+        border-radius:6px;
+        background-color:#e0be92;
+        padding: 0 20px;
+        margin-bottom:20px;
+    }
+    .content-titleBefore{
+        font-size: 22px;
+        font-family: Roboto;
+        text-align:left;
+        line-height:30px;
+            }
+    .content-paraAfter{
+       display:none;
+       font-size: 16px;
+       font-family: Roboto;
+       text-align: left;
+       line-height:18px;
+       opacity:0; 
+    }
+		  .content-boxrestaurants{
+       margin-left:20px;
+        width:100%; 
+        height:100%;
+        border-radius:6px;
+        background-color:#e0be92;
+        padding: 0 20px;
+        margin-bottom:20px;
+    }
+    .content-restaurantsBefore{
+        font-size: 22px;
+        font-family: Roboto;
+        text-align:left;
+        line-height: 30px;
+            }
+    .content-restaurantsAfter{
+       display:none;
+       font-size: 16px;
+       font-family: Roboto;
+       text-align: left;
+       line-height:18px;
+       opacity:0; 
+    }
+    
+		 .content-AccHotels{
+       margin-left:20px;
+        width:100%; 
+        height:100%;
+        border-radius:6px;
+        background-color:#e0be92;
+        padding: 0 20px;
+        margin-bottom:20px;
+    }
+		   .content-AccBefore{
+        font-size: 22px;
+        font-family: Roboto;
+        text-align:left;
+        line-height: 30px;
+            }
+    .content-AccAfter{
+       display:none;
+       font-size: 16px;
+       font-family: Roboto;
+       text-align: left;
+       line-height:18px;
+       opacity:0; 
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $(".about-city").hover(function(){
+        $(this).addClass("highlight");
+    }, function(){
+        $(this).removeClass("highlight");
+    });
+        $(".content-boxplaces").click(function(){
+        $(".content-boxplaces").animate({
+            width:'90%',
+            height:'100%'
+            }, 'fast');
+            $(".content-paraAfter").show().animate({opacity:'1'},'slow');
+    });
+
+		 $(".content-boxrestuarents").click(function(){
+        $(".content-boxrestuarents").animate({
+            width:'90%',
+            height:'100%'
+            }, 'fast');
+            $(".content-restaurantsAfter").show().animate({opacity:'1'},'slow');
+    });
+				 $(".content-AccHotels").click(function(){
+        $(".content-AccHotels").animate({
+            width:'90%',
+            height:'100%'
+            }, 'fast');
+            $(".content-AccAfter").show().animate({opacity:'1'},'slow');
+    });
+});
+</script>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-light" id="navlist">
+    <div class="container">
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+       <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link" data-toggle="tooltip" title="Home Page!" onmouseover="MouseOver(this);" onmouseout="MouseOut(this);"><i class="fas fa-house-user"></i></a></li>
+          <li class="nav-item dropdown">
+            <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#" >Trending Tours<b class="caret"></b></a>
+            <ul class="dropdown-menu">          
+                <div class="honymoon_holiday_submenu">
+                <div class="mega_menu_header_titles mega_menu_header_titles_no_top"></div>
+                                <li><a href="ooty.html" title="Goa Tour Packages">Hill Station -Ooty </a></li> 
+                                <li><a href="delhi.html" title="Gujarat Tour Packages">Historic - Delhi </a></li>
+                                <li><a href="kanyakumari.html" title="Himachal Tour Packages">Beach - Kanyakumari </a></li> 
+                          
+                       <li><a href="ladakh.html" title="Ladakh Tour Packages">Adventure -  Ladakh</a></li>
+                </div>  </ul>
+          </li>
+             <li class="nav-item"><a href="adventure.html" class="nav-link">Adventure tours</a></li>
+          <li class="nav-item"><a href="faqs.html" class="nav-link" data-toggle="tooltip" title="FAQs"><i class="fas fa-question-circle"></i></a></li>
+          <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="sign.html" class="nav-link">Sign-In</a></li>
+          <li class="nav-item"><a href="TravelEssentials.html" class="nav-link">Travel Essentials</a></li>
+       </ul>
+
+      </div>
+    </div>
+  </nav>
+</header>
+ 
+  <section>
+     <div class="row section-new">
+		  	<div class="col-md-4 city-img">
+					<div class="row">
+						<div class="col-md-12">
+                        <h3 class="city-heading uppercase">ladakh</h3>
+												<img src="https://llic.b-cdn.net/images/essence-of-kashmir-and-ladakh.jpg" class="city-img responsive-img" alt="ladakh" />
+                    </div>
+                </div>
+		  	</div>
+            <div class="col-md-8 about-heading">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="about-heading uppercase">All about ladakh and around</h3>
+												<p class="about-city">Lei the joint capital and largest town of the union territory of Ladakh in India. Leh, located in the Leh district, was also the historical capital of the Himalayan kingdom of Ladakh, the seat of which was in the Leh Palace, the former mansion of the royal family of Ladakh, built in the same style and about the same time as the Potala Palace in Tibet. Leh is at an altitude of 3,524 metres (11,562 ft), and is connected via National Highway 1 to Srinagar in the southwest and to Manali in the south via the Leh-Manali Highway.
+                                                A land like no other with a superabundance of attractions to visit and fabulous landscapes, amazing people and culture, Ladakh is truly a heaven on Earth.
+                                                Bounded by two of the world's mightiest mountain ranges, the Great Himalaya and the Karakoram, it lies athwart two other, the Ladakh range and the Zanskar range. Ladakh is mystical in all the spheres it covers, from nature, geography, sceneries to the modest cultures that it fosters.</p>
+                    </div>
+                </div>
+            </div>
+     </div>
+ <div class="row section-new">
+            <div class="col-md-3 city-map">
+               <h4 class="title">Location</h4>
+                   <div id="map"></div>
+             </div>
+               <div class="col-md-7 city-video">
+								 		<h4 class="title">A short glimps of the City </h4>
+                               <iframe class="responsive-video" src="https://www.youtube.com/embed/G5as48F3KzM?autoplay=1"></iframe>
+               </div>
+							<div class="col-md-2 city-weather">
+							     <h4 class="title">Weather: </h4>
+									<p class="d-md-none d-lg-block">
+                               Ladakh weather is no mystery to the travelers for its extreme nature. From temperature variation of -20 degrees to 22 degrees Celsius throughout the year.
+                                </p>
+									        <div id="weatherdata" onload="fetchWeatherData()"></div>
+                          <div class="weatherdata">
+                            <div id="temp-data"></div>
+                            <div id="feelslike-data"></div>
+                            <div id="temp_max-data"></div>
+                            <div id="temp_min-data"></div>
+                            <div id="wind_speed-data"></div>
+                          </div>
+							</div>
+				</div>    
+                <br>
+   <div class="row botton-sec section-new">
+            <div class="col-md-3 content-boxplaces">
+								     <h4 class="content-titleBefore">Places to visit</h4>
+								     <p class="content-paraAfter" id="attractionsdata">	 </p>
+            </div>
+            <div class="col-md-4 content-AccHotels">
+                  <h4 class="content-AccBefore">5 Start Accomodations - <h6>in Ranking Order</h6></h4>  
+                    <p class="content-AccAfter"  id="hotelsdata"></p>
+             </div>	
+             <div class="col-md-4 content-boxrestaurants">
+                   <h4 class="content-restaurantsBefore">Some Best Restuarents</h4>
+                  <p class="content-restaurantsAfter">
+												<div id="restaurantsdata"></div>
+									 </p>
+              </div>
+            </div>
+    </section>
+
+  <footer class="container-fluid">
+      <div id="footer-details" class="row">
+        <div class="col-sm-4">
+          <h4 class="uppercase general-sub">About</h4>
+          <p class="inline-block footertext">Travel Agent since more than a decade, helped thousands of travellers cherish a safe and wonderful holiday.</p>
+        </div>
+        <div class="col-sm-4">
+            <h4 class="uppercase general-sub">Download</h4>
+              <p class="inline-block footertext"> Need our Travel brocher? Download here.<a href="#" target="_blank" class="cv-pdf"><i class="fa fa-download" aria-hidden="true"></i><span class="sr-only">Download link.</span></a></p>
+        </div>
+        <div class="col-sm-4">
+            <h4 class="uppercase general-sub">Social</h4>
+            <ul class="list-inline social-links">
+              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span class="sr-only">FaceBook</span>
+                </a>
+              </li>
+               <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                </li>
+                              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <span class="sr-only">Linkedin</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                  <a target="_blank" href="#">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">YouTube</span>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+ </footer>
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCplBZ7saev3abj_d5Ay4LGwueQMOY-wOM&callback=initMap">
+    </script>
+<script>
+function initMap() {
+  var ladakh = {lat:34.209515, lng:77.615112};
+
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: ladakh});
+   var marker = new google.maps.Marker({position: ladakh, map: map});
+}
+    </script>
+
+	
+		<script>
+  
+			var xhr = new XMLHttpRequest();
+			var data;
+
+			xhr.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=lei&APPID=08186312a5a64c7bc1c004cd32050ebf&units=metric");
+
+			xhr.send();
+			xhr.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+							data = JSON.parse(this.responseText);
+					};
+			}
+
+			setTimeout(function() {
+							document.getElementById("temp-data").innerHTML =`<h6><b>Lei, Ladahk temp in celsius today is </b>${data.main.temp}</h6>` ;
+						document.getElementById("feelslike-data").innerHTML =`<h6><b>Feels like </b>${data.main.feels_like}</h6>` ;
+						document.getElementById("temp_max-data").innerHTML =`<h6><b>Max temp today is </b>${data.main.temp_max}</h6>` ;
+						document.getElementById("temp_min-data").innerHTML =`<h6><b>Min temp  today is </b>${data.main.temp_min}</h6>` ;
+						document.getElementById("wind_speed-data").innerHTML =`<h6><b>Wind Speed today is </b>${data.wind.speed}</h6>` ;	
+						}, 500);
+ </script>
+
+
+
+  <script>
+	var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://tripadvisor1.p.rapidapi.com/hotels/list?offset=0&currency=USD&limit=10&order=asc&lang=en_US&sort=recommended&location_id=297624&adults=1&checkin=%3Crequired%3E&rooms=1&nights=2",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+		"x-rapidapi-key": "3e1b2b68d1msh65cbdf6a738bd92p1f119cjsn2d12e5e2fb9d"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	var data = response.data;
+
+	data.forEach(function (item){
+					if (item !== undefined){
+		document.getElementById('hotelsdata').innerHTML += "<p>"+ item.name + "</p>";
+		}
+	});
+
+	});
+			
+	</script>
+	<script>
+	var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://tripadvisor1.p.rapidapi.com/restaurants/list?restaurant_tagcategory_standalone=10591&lunit=km&restaurant_tagcategory=10591&dietary_restrictions=Indian&limit=7&min_rating=4.5&currency=USD&lang=en_US&restaurant_dining_options=Reservations&location_id=297624",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+		"x-rapidapi-key": "3e1b2b68d1msh65cbdf6a738bd92p1f119cjsn2d12e5e2fb9d"
+	}
+}
+
+		$.ajax(settings).done(function (response) {
+		var data = response.data;
+
+	data.forEach(function (item){
+					if (item !== undefined){
+		document.getElementById('restaurantsdata').innerHTML += "<p>"+ item.name + "</p>";
+					}
+	});
+
+		});
+		</script>
+		<script>
+			var settings = {
+				"async": true,
+				"crossDomain": true,
+				"url": "https://tripadvisor1.p.rapidapi.com/attractions/list?lang=en_US&currency=USD&sort=ranking_position&lunit=10%20km&min_rating=4&limit=15&subcategory=Sights%20%2526%20Landmarks&location_id=297624",
+				"method": "GET",
+				"headers": {
+					"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+					"x-rapidapi-key": "3e1b2b68d1msh65cbdf6a738bd92p1f119cjsn2d12e5e2fb9d"
+				}
+			}
+
+				$.ajax(settings).done(function (response) {
+				var data = response.data;
+
+			data.forEach(function (item){
+							if (item !== undefined){
+				document.getElementById('attractionsdata').innerHTML += "<p>"+ item.name + "</p>";
+							}
+			});
+
+				});
+		</script>
+  </body>
+</html>
+

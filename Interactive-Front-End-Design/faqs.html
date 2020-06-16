@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Expand and Collapse FAQ Accordion</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2a05f92155.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+  body {
+    background: #fff;
+  }
+  .accordion .card {
+    background: none;
+    border: none;
+  }
+  .accordion .card .card-header {
+    background: none;
+    border: none;
+    padding: .4rem 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .accordion .card-header h2 span {
+    float: left;
+    margin-top: 10px;
+  }
+  .accordion .card-header .btn {
+    color: #2f2f31;
+    font-size: 1.04rem;
+    text-align: left;
+    position: relative;
+    font-weight: 500;
+    padding-left: 2rem;
+  }
+  .accordion .card-header i {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 9px;
+  }
+  .accordion .card-header .btn:hover {
+    color: #ff8300;
+  }
+  .accordion .card-body {
+    color: #324353;
+    padding: 0.5rem 3rem;
+  }
+  .page-title {
+    margin: 3rem 0 3rem 1rem;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+  }
+  .page-title::after {
+    content: "";
+    width: 80px;
+    position: absolute;
+    height: 3px;
+    border-radius: 1px;
+    background: #73bb2b;
+    left: 0;
+    bottom: -15px;
+  }
+  .accordion .highlight .btn {
+    color: #74bd30;
+  }
+  .accordion .highlight i {
+    transform: rotate(180deg);
+  }
+
+  
+</style>
+
+<script>
+  $(document).ready(function(){
+   // to set a background image to FAQ page
+	   document.body.style.backgroundImage = "url('https://cdn2.vectorstock.com/i/1000x1000/88/21/seamless-question-mark-faq-pattern-background-vector-17408821.jpg')";
+
+    // to clear the background around the text
+    document.getElementById("accordionExample").style.background ="#fff";
+    
+		// to draw a border around the text		
+	   document.getElementById("accordionExample").style.border = "thin solid #0000FF";
+		 
+    // Add minus icon for collapse element which is open by default
+    $(".collapse.show").each(function(){
+      $(this).prev(".card-header").addClass("highlight");
+    });
+    
+    // Highlight open collapsed element 
+    $(".card-header .btn").click(function(){
+      $(".card-header").not($(this).parents()).removeClass("highlight");
+      $(this).parents(".card-header").toggleClass("highlight");
+    });
+    // to border the current FAQ
+      $("#headingOne").click(function(){
+           document.getElementById("collapseOne").style.border = "thin solid #0000FF";
+         });
+      });
+</script>
+</head>
+<body>
+<header>
+        <nav class="navbar navbar-expand-md navbar-light" id="navlist">
+            <div class="container">
+            <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-toggle="tooltip" title="Home Page!" onmouseover="MouseOver(this);" onmouseout="MouseOut(this);"><i class="fas fa-house-user"></i></a></li>
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#" >Trending Tours<b class="caret"></b></a>
+                    <ul class="dropdown-menu">          
+                        <div class="honymoon_holiday_submenu">
+                        <div class="mega_menu_header_titles mega_menu_header_titles_no_top"></div>
+                                        <li><a href="ooty.html" title="Goa Tour Packages">Hill Station -Ooty </a></li> 
+                                        <li><a href="delhi.html" title="Gujarat Tour Packages">Historic - Delhi </a></li>
+                                        <li><a href="kanyakumari.html" title="Himachal Tour Packages">Beach - Kanyakumari </a></li> 
+                                
+                                        <li><a href="ladakh.html" title="Ladakh Tour Packages">Adventure -  Ladakh</a></li>
+                        </div>  </ul>
+                </li>
+                 <li class="nav-item"><a href="adventure.html" class="nav-link">Adventure tours</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link" data-toggle="tooltip" title="FAQs"><i class="fas fa-question-circle"></i></a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="sign.html" class="nav-link">Sign-In</a></li>
+                <li class="nav-item"><a href="TravelEssentials.html" class="nav-link">Travel Essentials</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-title">FAQs</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i> What if i cancel a trip before 1 month?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-circle-down"></i> How to upgrade my plan from economy to premium Guided tour?</a>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-chevron-circle-down"></i> Do you have customer Support 24/7 ?</a>                     
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-chevron-circle-down"></i> Once i book and make payments can i contact the hotel and Guide directly?</a>                               
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>                            

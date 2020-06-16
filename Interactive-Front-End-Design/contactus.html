@@ -1,0 +1,81 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact Us</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/2a05f92155.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+  <style>
+    .center-form{
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+			<script type="text/javascript">
+				(function(){
+						emailjs.init("user_kAvWvtrOtx8rIEZBPIf4Y");
+				})();
+			</script>
+        </head>
+        <body>	
+
+        <header>
+        <nav class="navbar navbar-expand-md navbar-light" id="navlist">
+            <div class="container">
+            <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-toggle="tooltip" title="Home Page!" onmouseover="MouseOver(this);" onmouseout="MouseOut(this);"><i class="fas fa-house-user"></i></a></li>
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#" >Trending Tours<b class="caret"></b></a>
+                    <ul class="dropdown-menu">          
+                        <div class="honymoon_holiday_submenu">
+                        <div class="mega_menu_header_titles mega_menu_header_titles_no_top"></div>
+                                        <li><a href="ooty.html" title="Goa Tour Packages">Hill Station -Ooty </a></li> 
+                                        <li><a href="delhi.html" title="Gujarat Tour Packages">Historic - Delhi </a></li>
+                                        <li><a href="kanyakumari.html" title="Himachal Tour Packages">Beach - Kanyakumari </a></li> 
+                                
+                                        <li><a href="ladakh.html" title="Ladakh Tour Packages">Adventure -  Ladakh</a></li>
+                        </div>  </ul>
+                </li>
+                 <li class="nav-item"><a href="adventure.html" class="nav-link">Adventure tours</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link" data-toggle="tooltip" title="FAQs"><i class="fas fa-question-circle"></i></a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="sign.html" class="nav-link">Sign-In</a></li>
+                <li class="nav-item"><a href="TravelEssentials.html" class="nav-link">Travel Essentials</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+        </header>
+        <br>
+            <section class="container">
+                <div style="text-align:center">
+                        <h3 class="contact-heading uppercase text-center">Got a vacation in Mind?</h3>
+                        <h5 class="uppercase text-center">Get in tough with us</h5>
+                </div>
+                <br>
+            <div class="center-form container" id="myform">
+            <form onsubmit="return sendMail(this);" method="POST">
+                    <input type="text" name="from_name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <br>
+                    <input type="text" name="from_email" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <br>
+                    <textarea rows="5" name="textareadesc" class="form-control" id="vacationrequest" placeholder="Your Ideal Vacation Description" required></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-secondary center-block">Send Best Suited Vacation Details</button>
+             </form>
+            </div>
+            </section>
+           <script src="js/script.js"></script>
+        </body>
+        </html>

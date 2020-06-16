@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enjoy Your Holiday</title>
+<script>
+function getData(cb) {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=bangalore&APPID=08186312a5a64c7bc1c004cd32050ebf&units=metric");
+    xhr.send();
+
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            cb(JSON.parse(this.responseText));
+        }
+    };
+}
+function printDataToConsole(data) {
+    console.log(data);
+}
+
+getData(printDataToConsole);
+</script>
+</head>
+<body>
+    <div id="data"></div>
+</body>
+</html>
