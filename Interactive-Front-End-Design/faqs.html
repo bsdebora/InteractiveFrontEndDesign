@@ -101,7 +101,7 @@
       $(this).parents(".card-header").toggleClass("highlight");
     });
     // to border the current FAQ
-      $("#headingOne").click(function(){
+      $("#headingFour").click(function(){
            document.getElementById("collapseOne").style.border = "thin solid #0000FF";
          });
       });
@@ -144,7 +144,37 @@
     <div class="col-lg-12">
       <h1 class="page-title">FAQs</h1>
       <div class="accordion" id="accordionExample">
-        <div class="card">
+      <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-circle-down"></i> What are your office hours?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">Our office is open Monday through Friday, 9:00 am – 5:00 pm.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i>Can you send me an itinerary for this tour?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">An overview of tour pacakages can be downloaded right away, but Complete tour information included in our tour book. Cancellation policies, maps & directions, and reservation forms are also provided in the tour book for your convenience. There is no additional itinerary information available for our tours. If you do not have a current tour book, please call our office, and we will be happy to mail one to you. You may also access the full tour book, itinerary and other information on this website.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i>Will I get any more information after I register?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">After you register for a tour, a confirmation will be sent to you, and the next information you receive will be the Final Details sent to you approximately two weeks before the tour departs. An exception would be for some longer tours, when a mid-letter may be sent to you with information you should be informed of earlier than two weeks from the tour departure.</div>
+          </div>
+        </div>
+         <div class="card">
           <div class="card-header" id="headingOne">
             <h2 class="clearfix">
               <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i> What if i cancel a trip before 1 month?</a>                  
@@ -154,34 +184,124 @@
             <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-circle-down"></i> How to upgrade my plan from economy to premium Guided tour?</a>
+         <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i> How much payment is due when I sign up for this tour?</a>                  
             </h2>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">For 1-Day tours, full payment is required at time of registration. Overnight tours require the deposit amount to secure your registration. If you register at the time final payment is due for an overnight tour, then the full tour cost is due at time of registration. **Although we will hold space for you for 10 days, your payment confirms your registration.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i> Will I receive a receipt for my payment?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">Yes, receipts will be sent for all payments received for tour reservations.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i> Will you send me a reminder of when my final payment is due?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">For 1-Day Tours, full payment is due at registration. Overnight tours require a deposit at time of registration. We ask you to mark your calendar with the final payment date, which is noted on your receipt. We do not send reminders of final payments due for a tour.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i> What is the deadline for signing up for this tour?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">We strongly suggest you register as soon as you decide to join a tour. Some tours fill quickly and your registration, with payment, will secure your registration and allow us to accommodate you as best as possible. For some overnight tours, hotels and attractions require monies be sent many months before the tour departs; therefore there are early deadlines on some tours. Early deadlines may vary from tour to tour.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i> How do I know I am on the tour?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">We will send you a receipt, which confirms your reservation.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i>The tour is full and I am on the wait list. What are the chances of space opening up?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">There is no way for us to know if there will be cancellations on any given tour. If you are notified that space is now available, you are not obligated to register for that tour. If your plans have changed and you are not able to join us, just let us know that when we call you.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i>Is there a lot of walking on this tour?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">Each person’s concept of “too much walking” is different. On most of our tours, you may have the option to drop out of an activity to rest if you need to.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i>Will I receive tickets before my tour (shows, games, etc.)?</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">Tickets will be issued by your tour director when you are on the tour.</div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i> Do you assign seats on the coach??</a>                  
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">Yes, we assign seats for most tours in the order that you register with your deposit. On overnight tours, we have a procedure of seat rotation, which we feel is fair to our tour travelers. Explanation of seat rotation is handled by the tour director, on the motorcoach, after the tour departure.</div>
+          </div>
+        </div>
+				  <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-chevron-circle-down"></i>Do you have insurance?</a>                               
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">Yes, insurance information is available upon request, please check out on our travel essentials page (Travel Guard Insurance).</div>
           </div>
         </div>
         <div class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-chevron-circle-down"></i> Do you have customer Support 24/7 ?</a>                     
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-chevron-circle-down"></i> What if I need to cancel off of a tour?</a>                    
             </h2>
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
+            <div class="card-body">If it becomes necessary for you to cancel, call our office as soon as possible. If the tour is full and there is a waiting list, we will try and find a replacement for you. If a replacement is not found, the motorcoach tour cancellation policy or air/cruise tour cancellation policy will take effect.</div>
           </div>
         </div>
         <div class="card">
           <div class="card-header" id="headingFour">
             <h2 class="mb-0">
-              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-chevron-circle-down"></i> Once i book and make payments can i contact the hotel and Guide directly?</a>                               
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-chevron-circle-down"></i>What is your cancellation policy?</a>                               
             </h2>
           </div>
           <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-            <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+            <div class="card-body">Our cancellation policies may be found in our brocher, under tour cancellation policy .  Please see our General Information page for further explanation.</div>
           </div>
         </div>
       </div>
